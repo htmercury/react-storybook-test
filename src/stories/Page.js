@@ -9,13 +9,13 @@ export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
 
     <section>
-      <h2>Pages in Storybook</h2>
+      <h2 style={{ color: "blue" }} >Pages in Storybook</h2>
       <p>
         We recommend building UIs with a{' '}
         <a href="https://componentdriven.org" target="_blank" rel="noopener noreferrer">
           <strong>component-driven</strong>
         </a>{' '}
-        process starting with atomic components and ending with pages.
+        process starting with (bla bla bla) atomic components and ending with pages.
       </p>
       <p>
         Render pages with mock data. This makes it easy to build and review page states without
@@ -23,13 +23,13 @@ export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
         in Storybook:
       </p>
       <ul>
+        <li style={{ fontSize: "28px" }}>
+          Assemble data in the page component from your services. You can mock these services out
+          using Storybook.
+        </li>
         <li>
           Use a higher-level connected component. Storybook helps you compose such data from the
           "args" of child component stories
-        </li>
-        <li>
-          Assemble data in the page component from your services. You can mock these services out
-          using Storybook.
         </li>
       </ul>
       <p>
